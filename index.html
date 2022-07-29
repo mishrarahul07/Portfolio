@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Mishra</title>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/horta" type="text/css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <script src="https://kit.fontawesome.com/bc46329bfe.js" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </script>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on("click", function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $("html, body").animate({
+                            scrollTop: $(hash).offset().top,
+                        },
+                        1200,
+                        function() {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        }
+                    );
+                } // End if
+            });
+        });
+    </script>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+</style>
+
+<body id="woosh" class="dark-theme">
+    <section id="first">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="bx bx-menu-alt-right"></i>
+            </label>
+            <label class="logo">
+                <img class="logopic" src="image-removebg-preview.png" alt="" />
+            </label>
+            <ul>
+                <li data-text="About" class="opac active">
+                    <a href="#about-section">About</a>
+                </li>
+                <li data-text="Skills" class="opac">
+                    <a href="#skillsec">Skills</a>
+                </li>
+                <li data-text="Projects" class="opac">
+                    <a href="#projectssec">Projects</a>
+                </li>
+
+                <li data-text="Contact" class="opac">
+                    <a href="#footer">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="text-container">
+            <p>Hello, I am</p>
+            <p>Rahul Mishra</p>
+            <p>I am a <span class="type"></span></p>
+            <script type="text/javascript" src="typed.js"></script>
+            <script type="text/javascript">
+                var typed = new Typed(".type", {
+                    strings: [
+                        "Software Developer",
+                        "Web Developer",
+                        "Tech Enthusiast",
+                    ],
+                    typeSpeed: 50,
+                    backSpeed: 30,
+                    loop: true, // Default value
+                });
+            </script>
+
+
+        <a href="Resume.pdf" download><button class="down-cv">Download CV</button></a>
+        </div>
+        <img src="photo-modified.png" alt="model" class="model" id="aboutimg" />
+        <div class="dropdown" id="firstdown">
+            <a href="#about-section"><img src="downarrow.png" alt="" /></a>
+        </div>
+    </section>
+
+    <div class="about-container" id="about-section">
+        <img src="photo-modified.png" id="aboutimg" alt="" />
+
+        <div class="about-text" id="abouttext">
+            <p>About Me</p>
+            <p>A few words</p>
+            <p>Hello, 👋🏻 my name is Rahul Mishra, an aspiring Software Developer. Born and brought up in New Delhi. I'm currently in my Final year pursuing Bachelor's degree in Computer Engineering
+                from Thapar Institute of Engineering & Technology, Patiala.
+            </p>
+
+            <a href="Resume.pdf" download> <button>Download CV</button></a>
+        </div>
+    </div>
+    <!-- <div class="counter-up">
+        <div class="content">
+            <div class="box">
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="counter">2100+ </div>
+                <div class="text">Downloads On Project</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-code"></i></div>
+                <div class="counter">50k+</div>
+                <div class="text">Productive lines of Code</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="counter">1700+</div>
+                <div class="text">(Rating) On CodeChef</div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-book-reader"></i></div>
+                <div class="counter">100+</div>
+                <div class="text">Students mentored</div>
+            </div>
+        </div>
+    </div> -->
+    <h1 id="skillsec">My Skills</h1>
+    <div class="skills-area">
+        <div class="skill">
+            <div class="skill-title">Languages (C/C++, Python, JavaScript)</div>
+            <div class="skill-bar"></div>
+            <div class="one1 skill-fill">
+                <span class="skill-percent">75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Web Development (MERN Stack)</div>
+            <div class="skill-bar"></div>
+            <div class="two2 skill-fill">
+                <span class="skill-percent">70%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Problem Solving</div>
+            <div class="skill-bar"></div>
+            <div class="three3 skill-fill">
+                <span class="skill-percent">85%</span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-title">UI/UX Design</div>
+            <div class="skill-bar"></div>
+            <div class="six6 skill-fill">
+                <span class="skill-percent">80%</span>
+            </div>
+        </div>
+    </div>
+    <div id="projectssec" class="services">
+        <div class="services-text">
+            <p>Projects</p>
+        </div>
+        <div class="misc"></div>
+        <div class="box-container">
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Pushpak: A smart UAV</p>
+                <p class="details">
+                    Enhanced the existing DJI TELLO drone and added functionalities like keyboard controls,
+                     hand-gesture controls, Face-tracking and line-following using Deep Learning and Image Processing.
+                </p>
+                <!-- <a href="https://github.com/kashingupta/covid_tracker" target="_blank"><button>Read more</button></a> -->
+            </div>
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Techie Calender</p>
+                <p class="details">
+                    A light-weight cross-browser extension which runs in the menu bar
+                    and aims at providing information about the upcoming Coding Contests
+                    on various platforms like CodeForces, CodeChef, Leetcode etc.
+                </p>
+                <a href="https://github.com/mishrarahul07/Techie-Calendar" target="_blank"><button>Read
+                        more</button></a>
+            </div>
+
+
+
+            <div class="box-3">
+                <span>3</span>
+                <p class="heading">Task-Master</p>
+                <p class="details">
+                    A website for students to fix their daily schedules and help them
+                    get the maximum out of their time in various fields related to both
+                    their work and personal life.
+                </p>
+                <a href="https://github.com/mishrarahul07/Task-Master" target="_blank"><button>Read more</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Rahul Mishra</p>
+        <p>
+            You can also follow me on the following platforms. Go and have a look !
+        </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mishra-rahul07/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mishrarahul07"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/mishra_rahul_07/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">Made with ❤️ by Rahul Mishra</p>
+    </footer>
+    <div class="a-social-b">
+        <aside>
+            <a id="themechanger"><i class="fas fa-lightbulb"></i></a>
+        </aside>
+        <a href="https://www.linkedin.com/in/mishra-rahul07/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/mishrarahul07"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/mishra_rahul_07/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="arrow-btn">
+        <a href="#first"><span class="fas fa-angle-up"></span></a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200,
+            });
+        });
+    </script>
+    <script>
+        $("#themechanger").click(function() {
+            $("#woosh").toggleClass("light-theme");
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- 
+git remote add origin https://github.com/harry6003/hg.git
+git branch -M main
+git push -u origin main -->
